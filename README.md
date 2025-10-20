@@ -99,5 +99,56 @@ Relationships Summary
 - One Property → Many Reviews
 - One Booking → One Payment
 
-  
+Feature Breakdown
+
+User Management
+Allows users to sign up, log in, and manage their profiles. Handles authentication and differentiates between hosts and guests.
+
+Property Management
+Hosts can list new properties, update details, and manage availability. Includes functionality for adding images, pricing, and location details.
+
+Booking System
+Enables guests to search for properties, check availability, and make bookings. The system prevents double bookings and calculates total price based on stay duration.
+
+Review System
+Allows guests to leave reviews and ratings for properties after their stay. Helps maintain trust and transparency among users.
+
+Payment Integration
+Handles secure payments for bookings. Tracks payment status and ensures that transactions are completed safely.
+
+Search and Filter
+Provides users with search and filtering options (e.g., by location, price, or property type) for a better user experience.
+
+API Security
+
+Security is a critical part of the Airbnb Clone project to protect user data and ensure safe transactions.
+
+Authentication: Verifies user identity using secure login credentials or tokens (e.g., JWT). Prevents unauthorized access.
+
+Authorization: Ensures users can only perform actions allowed by their role (e.g., guests can’t edit other users’ properties).
+
+Data Encryption: Protects sensitive information like passwords and payment data both in storage and during transfer.
+
+Rate Limiting: Prevents abuse by limiting the number of API requests from a single source within a time frame.
+
+Validation and Sanitization: Ensures all input data is clean and secure, preventing SQL injection or cross-site scripting attacks.
+
+CI/CD Pipeline
+
+The project uses Continuous Integration and Continuous Deployment (CI/CD) to automate testing, building, and deployment.
+
+CI/CD ensures that code changes are tested automatically and deployed quickly without manual steps.
+This helps maintain project stability and improves collaboration among developers.
+
+Tools Used:
+
+GitHub Actions for automation of builds and tests
+
+Docker for consistent deployment environments
+
+Git for version control and collaboration
+
+
+
+
 
